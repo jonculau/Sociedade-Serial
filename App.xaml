@@ -2,8 +2,16 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Sociedade_Serial"
+             xmlns:SkinThemes="clr-namespace:Sociedade_Serial.Themes"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <SkinThemes:SkinResourceDictionary LightSource="./Themes/Light.xaml" 
+                                                   DarkSource="./Themes/Dark.xaml"
+                                                   x:Name="themes"/>
+                <ResourceDictionary Source="./styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

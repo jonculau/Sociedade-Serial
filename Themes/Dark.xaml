@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Sociedade_Serial.Themes">
+    <Color x:Key="AppBackgroundColor">#333</Color>
+    <Color x:Key="ButtomMouseOverBorderColor">#505050</Color>
+    <SolidColorBrush x:Key="AppBackground" Color="{DynamicResource AppBackgroundColor}"/>
+    <SolidColorBrush x:Key="ToggleButtom">#f0f0f0</SolidColorBrush>
+    <SolidColorBrush x:Key="ToggleButtomBorder">#F0f0f0</SolidColorBrush>
+    <SolidColorBrush x:Key="WindowBorder">#F0f0f0</SolidColorBrush>
+    <SolidColorBrush x:Key="TabItemBorder">#f0f0f0</SolidColorBrush>
+    <SolidColorBrush x:Key="Font">#f0f0f0</SolidColorBrush>
+    <SolidColorBrush x:Key="CloseButtomBackground">#FFFF</SolidColorBrush>
+    <SolidColorBrush x:Key="ButtomMouseOver">#505050</SolidColorBrush>
+    <SolidColorBrush x:Key="TabCloseButtomMouseOver">#606060</SolidColorBrush>
+</ResourceDictionary>

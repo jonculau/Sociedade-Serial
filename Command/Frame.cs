@@ -123,4 +123,4 @@ namespace Sociedade_Serial.Comunication
 }
 
 
-}
+

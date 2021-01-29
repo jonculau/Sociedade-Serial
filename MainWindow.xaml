@@ -4,9 +4,53 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sociedade_Serial"
+        xmlns:Test="clr-namespace:Sociedade_Serial.Test"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Style ="{DynamicResource MainWindowStyle}">
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="35" 
+                      ResizeBorderThickness="5"
+                      GlassFrameThickness="0"
+                      NonClientFrameEdges="None"
+                      UseAeroCaptionButtons="True"
+                      CornerRadius="0"/>
         
+    </WindowChrome.WindowChrome>
+    <Grid>
+
+        <TabControl Name="TestsTabs">
+            <TabItem Header="+" GotFocus="addTab" Name="PlusButtom"></TabItem>
+        </TabControl>
+        
+        <!--Icon-->
+        <Image Source="./icon.ico" 
+               VerticalAlignment="Top" 
+               HorizontalAlignment="Left" 
+               Height="25"
+               Margin="10,10,0,0"/>
+
+        <!--Caption Buttons-->
+        <DockPanel HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,2,2,0">
+            <Button x:Name="MinimizeButtom" 
+                    Style="{DynamicResource MinimizeButtonStyle}"
+                    Click="MinimizeButtom_Click"/>
+            <Button x:Name="RestoreButtom" 
+                    Style="{DynamicResource RestoreButtonStyle}"
+                    Click="RestoreButtom_Click"/>
+            <Button x:Name="MaximizeButtom" 
+                    Style="{DynamicResource MaximizeButtonStyle}"
+                    Click="MaximizeButtom_Click"/>
+            <Button x:Name="CloseButtom" 
+                    Style="{DynamicResource CloseButtomStyle}"
+                    Click="CloseButtom_Click"/>
+        </DockPanel>
+        <DockPanel    VerticalAlignment="Bottom" 
+                      HorizontalAlignment="Left"
+                      Margin="10">
+            <ToggleButton Click="Theme_Change"/>
+            <Label>Tema Escuro</Label>
+        </DockPanel>
     </Grid>
+
 </Window>

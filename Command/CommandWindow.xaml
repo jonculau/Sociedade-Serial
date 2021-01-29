@@ -1,0 +1,16 @@
+﻿<Window x:Class="Sociedade_Serial.Command.CommandWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sociedade_Serial.Command"
+        mc:Ignorable="d"
+        Title="Novo comando" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"  WindowStyle="ToolWindow"
+        Width="840px">
+    <Grid>
+
+    </Grid>
+    <Window.Resources>
+        <ResourceDictionary Source="../styles.xaml"/>
+    </Window.Resources>
+</Window>
