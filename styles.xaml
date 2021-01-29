@@ -183,7 +183,7 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="LayoutRoot" Property="Background" Value="{DynamicResource ButtomMouseOverBorder}"/>
+                            <Setter TargetName="LayoutRoot" Property="Background" Value="{DynamicResource ButtomMouseOver}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
